@@ -21,7 +21,8 @@ body {
 
   --right-colorblind-01: #2271B2;
   --right-colorblind-02: #1C4EC9;
-  --displaced-colorblind: #D55E00;
+  --displaced-colorblind-01: #D55E00;
+  --displaced-colorblind-02: rgba(221, 133, 66, 0.65);
   --wrong-colorblind: #1D1D1D;
 
   --wrong-disabled: #D1553CA6;

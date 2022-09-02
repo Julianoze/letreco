@@ -32,5 +32,5 @@
 }
 
 .letter-yellow.colorblind {
-  color: var(--displaced-colorblind);
+  color: var(--displaced-colorblind-01);
 }

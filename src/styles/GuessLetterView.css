@@ -39,7 +39,13 @@
 
 .right.colorblind {
   background-color: var(--right-colorblind-01);
-  border-radius: 1rem !important;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--right-colorblind-01),
+    var(--right-colorblind-01) 10px,
+    var(--right-colorblind-02) 10px,
+    var(--right-colorblind-02) 20px
+  );
 }
 
 .displaced {
@@ -49,10 +55,13 @@
 }
 
 .displaced.colorblind {
-  background-color: var(--displaced-colorblind);
-  border-radius: 1rem !important;
-  border-style: dashed;
-  border-width: 3px;
+  background-color: var(--displaced-colorblind-01) !important;
+  background:
+    linear-gradient(115deg, transparent 75%, var(--displaced-colorblind-02) 75%) 0 0,
+    linear-gradient(245deg, transparent 75%, var(--displaced-colorblind-02) 75%) 0 0,
+    linear-gradient(115deg, transparent 75%, var(--displaced-colorblind-02) 75%) 7px -15px,
+    linear-gradient(245deg, transparent 75%, var(--displaced-colorblind-02) 75%) 7px -15px,#36c;
+  background-size: 15px 30px;
 }
 
 .wordlistError {
@@ -62,7 +71,7 @@
 }
 
 .wordlistError.colorblind {
-  border: 3px solid var(--displaced-colorblind);
+  border: 3px solid var(--displaced-colorblind-01);
 }
 
 .letter-underline-active {

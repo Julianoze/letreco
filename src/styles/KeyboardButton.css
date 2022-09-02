@@ -53,7 +53,7 @@
 }
 
 .displaced.colorblind {
-  background-color: var(--displaced-colorblind);
+  background-color: var(--displaced-colorblind-01);
 }
 
 .displaced:disabled {
