@@ -1,5 +1,5 @@
 .keyboard-button {
-  border: solid 1px #252525;
+  border: solid 1px var(--color-03);
   font-size: 16px;
 }
 
@@ -14,53 +14,53 @@
 }
 
 .right {
-  background-color: #51b36e;
-  color: #f4f3f1;
+  background-color: var(--right);
+  color: var(--color-01);
 }
 
 .right.colorblind {
-  background-color: #2271B2;
+  background-color: var(--right-colorblind-01);
 }
 
 .right:disabled {
-  background-color: rgba(81, 179, 110, 0.65);
+  background-color: var(--right-disabled);
 }
 
 .right.colorblind:disabled {
-  background-color: rgba(34, 113, 178, 0.65);
+  background-color: var(--right-colorblind-disabled);
 }
 
 .wrong {
-  background-color: #943e3c;
-  color: #f4f3f1;
+  background-color: var(--wrong);
+  color: var(--color-01);
 }
 
 .wrong.colorblind {
-  background-color: #1d1d1d;
+  background-color: var(--wrong-colorblind);
 }
 
 .wrong:disabled {
-  background-color: rgba(148, 62, 60, 0.65);
+  background-color: var(--wrong-disabled);
 }
 
 .wrong.colorblind:disabled {
-  background-color: rgba(29, 29, 29, 0.65);
+  background-color: var(--wrong-colorblind-disabled);
 }
 
 .displaced {
-  background-color: #c79c2e;
-  color: #f4f3f1;
+  background-color: var(--displaced);
+  color: var(--color-01);
 }
 
 .displaced.colorblind {
-  background-color: #D55E00;
+  background-color: var(--displaced-colorblind);
 }
 
 .displaced:disabled {
-  background-color: rgba(199, 156, 46, 0.65)
+  background-color: var(--displaced-disabled);
 }
 
 .displaced.colorblind:disabled {
-  background-color: rgba(213, 94, 0, 0.65);
+  background-color: var(--displaced-colorblind-disabled);
 }
 

@@ -4,17 +4,17 @@
 }
 
 .win-text {
-  color: #51b36e;
+  color: var(--right);
 }
 
 .win-text.colorblind {
-  color: #2271B2;
+  color: var(--right-colorblind-01);
 }
 
 .lose-text {
-  color: #943e3c;
+  color: var(--wrong);
 }
 
 .lose-text.colorblind {
-  color: #D55E00;
+  color: var(--displaced-colorblind);
 }

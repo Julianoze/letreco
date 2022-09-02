@@ -1,7 +1,8 @@
 .letter-wrapper {
   flex-direction: column;
-  border: 2px solid #252525;
-  width: 48px;
+  border: 2px solid var(--color-04);
+  background-color: var(--color-03);
+  width: 44px;
   height: 40px;
 
   font-size: 20px;
@@ -9,59 +10,59 @@
 }
 
 .typing {
-  border: 3px solid #252525;
-  background-color: #f4f3f1;
-  color: #252525;
+  border: 3px solid var(--color-04);
+  background-color: var(--color-03);
+  color: var(--color-02);
 }
 
 .disabled {
-  border: 1px solid #252525;
-  background-color: #f4f3f1;
-  color: #252525;
+  border: 1px solid var(--color-02);
+  background-color: var(--color-03);
+  color: var(--color-02);
 }
 
 .wrong {
-  border: 1px solid #252525;
-  background-color: #943e3c;
-  color: #f4f3f1;
+  border: 1px solid var(--color-02);
+  background-color: var(--wrong);
+  color: var(--color-01);
 }
 
 .wrong.colorblind {
-  background-color: #1d1d1d;
+  background-color: var(--wrong-colorblind);
 }
 
 .right {
-  border: 1px solid #252525;
-  background-color: #51b36e;
-  color: #f4f3f1;
+  border: 1px solid var(--color-02);
+  background-color: var(--right);
+  color: var(--color-01);
 }
 
 .right.colorblind {
-  background-color: #2271B2;
+  background-color: var(--right-colorblind-01);
   border-radius: 1rem !important;
 }
 
 .displaced {
-  border: 1px solid #252525;
-  background-color: #c79c2e;
-  color: #f4f3f1 !important;
+  border: 1px solid var(--color-02);
+  background-color: var(--displaced);
+  color: var(--color-01) !important;
 }
 
 .displaced.colorblind {
-  background-color: #D55E00;
+  background-color: var(--displaced-colorblind);
   border-radius: 1rem !important;
   border-style: dashed;
   border-width: 3px;
 }
 
 .wordlistError {
-  border: 3px solid #943e3c;
-  background-color: #f4f3f1;
-  color: #252525;
+  border: 3px solid var(--wrong);
+  background-color: var(--color-01);
+  color: var(--color-02);
 }
 
 .wordlistError.colorblind {
-  border: 3px solid #D55E00;
+  border: 3px solid var(--displaced-colorblind);
 }
 
 .letter-underline-active {
@@ -69,7 +70,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  border-bottom: 3px solid;
+  border-bottom: 3px solid var(--color-04);
   border-radius: 1rem !important;
 
   align-self: end;

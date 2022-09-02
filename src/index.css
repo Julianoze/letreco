@@ -1,10 +1,36 @@
 body {
   font-family: 'Signika Negative', sans-serif;
-  background-color: #f4f3f1;
+  background-color: var(--color-01);
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --color-01: #F4F3F1;
+  --color-02: #F8F6F2;
+  --color-03: #CAC1B5;
+  --color-04: #B8AEA1;
+
+  --wrong: #D1553C;
+  --displaced: #EDBF39;
+  --right: #5A9F8C;
+
+  --right-colorblind-01: #2271B2;
+  --right-colorblind-02: #1C4EC9;
+  --displaced-colorblind: #D55E00;
+  --wrong-colorblind: #1D1D1D;
+
+  --wrong-disabled: #D1553CA6;
+  --right-disabled: #5A9F8CA6;
+  --displaced-disabled: #EDBF39A6;
+
+  --right-colorblind-disabled: #2271B2A6;
+  --displaced-colorblind-disabled: #D55E00A6;
+  --wrong-colorblind-disabled: #1D1D1DA6;
+
+  --modal-overlay: rgba(255, 255, 255, 0.5);
 }
