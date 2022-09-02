@@ -2,10 +2,11 @@
   flex-direction: column;
   border: 2px solid var(--color-04);
   background-color: var(--color-03);
-  width: 44px;
-  height: 40px;
 
-  font-size: 20px;
+  width: 60px;
+  height: 60px;
+
+  font-size: 32px;
   font-weight: bolder;
 }
 
