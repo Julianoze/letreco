@@ -2,6 +2,7 @@ import { GuessLetter, GuessListProps } from "../models";
 import { GUESS_LIST_SIZE, WORD_SIZE } from "../shared/GameConstants";
 import { completeArray } from "../utils";
 import GuessLetterView from "./GuessLetterView";
+import '../styles/GuessList.css';
 
 const completeList = (guesses: GuessLetter[][]) => {
   return [
@@ -21,7 +22,7 @@ function GuessList(props: GuessListProps) {
       return (
         <div
           key={guessIndex}
-          className="d-flex justify-content-center mb-3"
+          className="d-flex justify-content-center mb-3 guess"
         >
           {guess.map((letter, letterIndex) => (
             <GuessLetterView
@@ -37,9 +38,7 @@ function GuessList(props: GuessListProps) {
     });
 
   return (
-    <div>
-      <div>{allGuesses}</div>
-    </div>
+      <div className="guesses">{allGuesses}</div>
   );
 }
 
