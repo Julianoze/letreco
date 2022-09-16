@@ -9,6 +9,7 @@ import { getDailyWord, getLast, getToday, wordList } from '../utils';
 import EndGameScreen from './EndGameScreen';
 import GuessList from './GuessList';
 import Keyboard from './Keyboard';
+import '../styles/Game.css';
 
 export const SAVED_GAME_INIT: SavedDailyGame = {
   date: getToday(),
@@ -269,7 +270,7 @@ function Game() {
 
   return (
     <div
-      className='mt-3'
+      className='mt-3 game'
       onClick={winState.isGameEnded && !isEndGameScreenOpen ? () => setIsEndGameScreenOpen(true): undefined}
       style={{ cursor: winState.isGameEnded && !isEndGameScreenOpen ? 'pointer' : 'default' }}
     >
@@ -280,11 +281,9 @@ function Game() {
         handleCloseScreen={handleEndGameScreenClose}
       />}
 
-      <div className='mb-4'>
-        <GuessList
-          guesses={guesses}
-        />
-      </div>
+      <GuessList
+        guesses={guesses}
+      />
 
       <Keyboard
         onLetterPress={handleKeyboardLetter}
