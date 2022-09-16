@@ -31,7 +31,7 @@ function Header() {
   });
 
   return (
-    <div className="mt-3 mb-4 d-flex align-items-center justify-content-around">
+    <div className="mt-3 mb-4 d-flex align-items-center justify-content-around header">
       {isHowToPlayOpen &&
         <HowToPlayScreen
           handleCloseScreen={() => setIsHowToPlayOpen(false)}

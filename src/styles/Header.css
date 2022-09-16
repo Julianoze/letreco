@@ -1,3 +1,7 @@
+.header {
+  height: 5%;
+}
+
 .header-button {
   background-color: var(--color-01);
   border: solid 1px var(--color-02);
