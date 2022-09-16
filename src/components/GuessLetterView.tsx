@@ -3,6 +3,7 @@ import { GlobalSettingsContext } from "../hooks/useGlobalSettings";
 import { useUnderlinePosition } from "../hooks/useUnderlinePosition";
 import { GuessLetterViewProps } from "../models";
 import '../styles/GuessLetterView.css';
+import getColorblindClass from "../utils/getLetterClass";
 
 function GuessLetterView(props: GuessLetterViewProps) {
   const { underlinePosition, setSpecificUnderlinePosition } = useUnderlinePosition();
@@ -37,7 +38,7 @@ function GuessLetterView(props: GuessLetterViewProps) {
 
   return (
     <div className={className} onClick={onClick}>
-      {props.letter}
+      <div className={`letter ${getColorblindClass(isColorblindModeActive, props.state)}`} >{props.letter}</div>
       {canAddUnderscore() && <div className="letter-underline-active"></div>}
     </div>
   );
