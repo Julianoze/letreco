@@ -1,6 +1,17 @@
+html, body, #root, .app-container {
+  height: 100%;
+}
+
+#root {
+  padding: 2%;
+}
+
 body {
   font-family: 'Signika Negative', sans-serif;
   background-color: var(--color-01);
+
+  display: flex;
+  flex-direction: column;
 }
 
 * {
@@ -12,7 +23,7 @@ body {
 :root {
   --color-01: #F4F3F1;
   --color-02: #F8F6F2;
-  --color-03: #CAC1B5;
+  --color-03: #C9C1B6;
   --color-04: #B8AEA1;
 
   --wrong: #D1553C;
