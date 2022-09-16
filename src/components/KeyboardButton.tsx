@@ -3,6 +3,7 @@ import { BsCheckLg, BsFillBackspaceFill } from "react-icons/bs";
 import { GlobalSettingsContext } from "../hooks/useGlobalSettings";
 import { KeyboardButtonProps } from "../models";
 import '../styles/KeyboardButton.css';
+import getColorblindClass from "../utils/getLetterClass";
 
 const mapIcon: { [icon: string]: () => JSX.Element } = {
   'back': () => (<BsFillBackspaceFill />),
@@ -30,7 +31,7 @@ function KeyboardButton(props: KeyboardButtonProps) {
       onClick={() => props.onClick()}
       disabled={!props.enabled}
     >
-      {content}
+      <div className={`letter ${getColorblindClass(isColorblindModeActive, props.stateClass)}`}>{content}</div>
     </button>
   );
 }

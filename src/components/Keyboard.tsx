@@ -25,13 +25,13 @@ function Keyboard(props: KeyboardProps) {
     return (
       <div
         key={letterLine.join('')}
-        className='d-flex justify-content-center mb-2'
+        className='d-flex justify-content-center mb-2 keyboard-row'
       >{buttons}</div>
     );
   });
 
   return (
-    <div className='px-lg-5 px-2'>
+    <div className='keyboard px-lg-5 px-2'>
       <div className='mb-3 d-flex justify-content-center'>
         <KeyboardButton
           elementKey='back'
